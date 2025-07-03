@@ -179,6 +179,62 @@
       color: var(--primary);
       text-decoration: underline;
     }
+    @media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 30px 20px;
+  }
+
+  .cta-section {
+    padding: 40px 20px;
+  }
+
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-section p {
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 40px 20px;
+  }
+
+  .section[style*="display: flex"] {
+    flex-direction: column;
+  }
+
+  .section[style*="display: flex"] > div {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .section img {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
   </style>
 </head>
 <body>

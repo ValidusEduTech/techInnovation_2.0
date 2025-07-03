@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Innovation 2.0 | Students' Katta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #f7d319;
+      --background: #111c34;
+      --card-bg: #111c34;
+      --muted: #9ca3af;
+      --text-light: #f4f4f5;
+      --transition: all 0.4s ease;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text-light);
+      line-height: 1.6;
+      padding: 40px 60px;
+      transition: var(--transition);
+    }
+    .container { max-width: 1140px; margin: auto; }
+    header {
+      text-align: center;
+      padding: 40px 20px 100px;
+      position: relative;
+    }
+    header img.banner {
+      width: 100%; height: auto;
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-family: 'Inter';
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+    header p {
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--muted);
+      max-width: 720px;
+      margin: auto;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 32px;
+      margin: 60px 0;
+    }
+    .card {
+      background: var(--card-bg);
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 0 12px rgba(250, 204, 21, 0.05);
+      border: 1px solid rgba(250, 204, 21, 0.08);
+      transition: var(--transition);
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(250, 204, 21, 0.15);
+    }
+    .card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      color: var(--primary);
+    }
+    .card p, .card ul {
+      font-size: 1rem;
+      color: var(--muted);
+    }
+    .card p em {
+      color: var(--text-light);
+      font-style: italic;
+    }
+    .card ul {
+      padding-left: 1.2em;
+      list-style-type: disc;
+    }
+    .section {
+      background: #111c34;
+      padding: 48px;
+      border-radius: 20px;
+      margin-top: 40px;
+    }
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+      color: var(--primary);
+      font-family: 'Inter';
+    }
+    .timeline {
+      border-left: 4px solid var(--primary);
+      padding-left: 30px;
+    }
+    .timeline-event {
+      position: relative;
+      margin-bottom: 40px;
+    }
+    .timeline-event::before {
+      content: "";
+      position: absolute;
+      left: -14px;
+      top: 4px;
+      width: 16px;
+      height: 16px;
+      background: var(--primary);
+      border-radius: 50%;
+    }
+    .timeline-event h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      color: var(--primary);
+    }
+    .timeline-event p {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      height: 200px;
+      object-fit: cover;
+    }
+    .cta-section {
+      background: linear-gradient(90deg, #f7d319 0%, #eab308 100%);
+      color: #111c34;
+      text-align: center;
+      padding: 60px 40px;
+      border-radius: 20px;
+      margin: 60px auto;
+    }
+    .cta-section h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .cta-section p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+    .cta-button {
+      background: #111c34;
+      color: #f7d319;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #111c34;
+    }
+    footer {
+      margin-top: 80px;
+      padding: 60px 20px;
+      text-align: center;
+      background: #111c34;
+      color: var(--muted);
+      border-radius: 20px;
+    }
+    footer a {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 40px;">
+      <img src="images/vet-logo.png" alt="ValidusEduTech Logo" style="max-width: 300px; height: auto;" />
+    </div>
+    <!-- content continues here -->
+
+    <header>
+      <img src="images/banner.jpg" alt="Tech Innovation Banner" class="banner" />
+      <h1>Tech Innovation 2.0</h1>
+      <p><em>Not just a workshop — a space for thoughtful action, community, and future-facing enterprise thinking.</em></p>
+    </header>
+
+    <div class="card-grid">
+      <div class="card">
+        <h2>About the Event</h2>
+        <p><em>An honest, grounded space to reframe how we think about enterprise innovation and our place in it.</em></p>
+      </div>
+      <div class="card">
+        <h2>When & Where</h2>
+        <ul>
+          <li>🗓️ August 2, 2025</li>
+          <li>📍 Acube Studio, Pune</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Key Voice</h2>
+        <p><em>Neeraj Athalye (VP, Icertis)</em> will share what real innovation looks like inside an enterprise: unglamorous, real, and deeply relevant.</p>
+      </div>
+      <div class="card">
+        <h2>Why Join?</h2>
+        <ul>
+          <li>Challenge your assumptions</li>
+          <li>Think and create with others</li>
+          <li>Shape your questions more than your answers</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <div class="section" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+        <!-- Left: Timeline -->
+        <div style="flex: 1; min-width: 280px;">
+            <h2 style="margin-bottom: 30px;">Workshop Timeline</h2>
+            <div style="border-left: 4px solid var(--primary); padding-left: 30px; padding-bottom: 10px ">
+            <div style="margin-bottom: 70px; position: relative;">
+                <div style="position: absolute; background: var(--primary); border-radius: 50%;"></div>
+                <h3 style="margin: 0 0 5px; color: var(--primary);">10:00 AM – Opening Circle</h3>
+                <p style="color: var(--muted);">Context setting, clarity of intention</p>
+            </div>
+            <div style="margin-bottom: 70px; position: relative;">
+                <div style="position: absolute;  background: var(--primary); border-radius: 50%;"></div>
+                <h3 style="margin: 0 0 5px; color: var(--primary);">10:30 AM – Industry Perspective</h3>
+                <p style="color: var(--muted);">Insights from Neeraj Athalye — no filters</p>
+            </div>
+            <div style="margin-bottom: 70px; position: relative;">
+                <div style="position: absolute; background: var(--primary); border-radius: 50%;"></div>
+                <h3 style="margin: 0 0 5px; color: var(--primary);">11:30 AM – Co-thinking Sprint</h3>
+                <p style="color: var(--muted);">Work together on live problem scenarios</p>
+            </div>
+            <div style="margin-bottom: 0px; position: relative;">
+                <div style="position: absolute; height: 14px; background: var(--primary); border-radius: 50%;"></div>
+                <h3 style="margin: 0 0 5px; color: var(--primary);">1:00 PM – Wrap & Reflect</h3>
+                <p style="color: var(--muted);">Share, connect, and evolve thoughts</p>
+            </div>
+            </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+            <img src="images/speaker.jpg" alt="Workshop Visual" style="width: 75%; border-radius: 16px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); object-fit: cover;" />
+        </div>
+</div>
+
+
+    <div class="section">
+      <h2>Snapshots from Tech Innovation 1.0</h2>
+      <p style="color: var(--muted); font-size: 1rem; margin-bottom: 2rem; max-width: 800px;">
+        The inaugural Tech Innovation in Enterprise event at Pasli offered students a unique, immersive experience far from traditional classrooms. Participants gathered around bonfires, engaged in raw, reflective dialogues, and explored real-life challenges faced by enterprises. These outdoor learning moments fostered a rare sense of camaraderie, clarity, and courage — all essential for future innovators.
+      </p>
+      <div class="gallery">
+        <img src="images/pasli1.jpg" alt="Discussion Circle">
+        <img src="images/pasli2.jpg" alt="Workshop in Action">
+        <img src="images/pasli3.jpg" alt="Campfire Talks">
+        <img src="images/pasli4.jpg" alt="Group Reflection">
+        <img src="images/pasli5.jpg" alt="Campfire Talks">
+        <img src="images/pasli6.jpg" alt="Group Reflection">
+      </div>
+    </div>
+
+    <div class="cta-section">
+        <h2>Ready to Join Tech Innovation 2.0?</h2>
+        <p>Reserve your spot now for an experience that redefines how you learn, think, and grow.</p>
+        <a href="https://forms.gle/g4CZnGm5iwax56MJ8" class="cta-button">Register Now</a>
+    </div>
+    
+    <div class="section">
+      <h2>About ValidusEduTech</h2>
+      <p style="color: var(--muted); font-size: 1rem; max-width: 800px;">
+        At ValidusEduTech, we believe in learning that shapes the whole personality. Our unique initiatives, <strong>Students' KATTA</strong> and <strong>S.P.A.R.K.</strong>, are designed to give students the edge they need.<br /><br />
+        <strong>Students' KATTA:</strong> Forget rigid classrooms! Students' KATTA brings students together in a relaxed cafe setting for about two hours. Through informal 'Katta Talks' and 'Katta Stories' on non-academic topics chosen by the students themselves, they find a safe space to express freely, share experiences, and learn from their peers. This initiative strongly focuses on building a sense of community and introducing the vital concept of networking, helping students develop communication and interpersonal skills crucial for their future.<br /><br />
+        <strong>S.P.A.R.K.</strong> (<em>Seek, Persist, Adventure, Reflect, Kindle</em>): Our outdoor experiential learning program focused on career orientation. It helps students explore possibilities and build valuable life skills outside the traditional classroom setting.<br /><br />
+        ValidusEduTech provides platforms where students can explore diverse interests, build confidence, and develop essential soft skills alongside their academic journey.
+      </p>
+    </div>
+
+  <footer>
+      <p>&copy; 2025 ValidusEduTech. All rights reserved.</p>
+      <p><a href="https://validusedutech.github.io/validusedutech/">Visit our site</a> | <a href="mailto:info@validusedutech.com">Contact Us</a></p>
+    </footer>
+</body>
+</html>
